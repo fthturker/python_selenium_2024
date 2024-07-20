@@ -63,7 +63,18 @@ print(myTuple)  # ('merhaba', 1, 5.0, True)
 
 a = list(myTuple)
 print(type(a))  # <class 'list'>
-a[0]="Hello"
-myTuple= tuple(a)
-print(type(myTuple)) # <class 'tuple'>
-print(a) # ['Hello', 1, 5.0, True]
+a[0] = "Hello"
+myTuple = tuple(a)
+print(type(myTuple))  # <class 'tuple'>
+print(a)  # ['Hello', 1, 5.0, True]
+
+mySet = {"merhaba", 5, 0, False}
+print(type(mySet))  # <class 'dict'>
+print(mySet)  # {0, 'merhaba', 5} # False degeri 0 ifade ettiğinden duplicate değerlerini tekrar yazmaz
+
+myDict = {"name": "Fatih", "age": 25, "city": "istanbul"}
+print(type(myDict))  # <class 'dict'
+print(myDict)  # {'name': 'Fatih', 'age': 25, 'city': 'istanbul'}
+print(len(myDict))  # 3
+myDict["name"] = 'Yavuz'
+print(myDict)  # {'name': 'Yavuz', 'age': 25, 'city': 'istanbul'}
